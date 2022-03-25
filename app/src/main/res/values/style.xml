@@ -16,4 +16,15 @@
         <item name="android:layout_marginStart">20dp</item>
         <item name="android:layout_marginEnd">20dp</item>
     </style>
+
+    <style name="scroll_button_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:height">60dp</item>
+    </style>
 </resources>
