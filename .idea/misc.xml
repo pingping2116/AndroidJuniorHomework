@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_effect.xml" value="0.1485" />
         <entry key="app/src/main/res/drawable/button_normal.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_pressed" value="0.1525" />
         <entry key="app/src/main/res/drawable/button_pressed.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.217" />
+        <entry key="app/src/main/res/drawable/login_button.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable/signup_button.xml" value="0.1485" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.35732574462890626" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2659500122070312" />
       </map>
     </option>
@@ -17,5 +21,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.35732574462890626" />
+      </ProjectState>
+    </option>
   </component>
 </project>
