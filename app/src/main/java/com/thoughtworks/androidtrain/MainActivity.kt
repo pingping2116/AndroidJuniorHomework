@@ -1,10 +1,12 @@
 package com.thoughtworks.androidtrain
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.ContextThemeWrapper
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,11 +22,21 @@ class MainActivity : AppCompatActivity() {
             val resId = resources.getIdentifier(stringName, "string", packageName)
             return getString(resId)
         }
-        for(index in 1..10){
+
+        fun goToConstraint(view: View) {
+            val intent = Intent(this, ConstraintActivity::class.java)
+            startActivity(intent)
+        }
+
+        var constraint_button=Button(ContextThemeWrapper(this, R.style.scroll_button_group))
+        constraint_button.setText("constraint_layout")
+        constraint_button.setOnClickListener {
+            goToConstraint(constraint_button)
+        }
+        linear.addView(constraint_button)
+
+        for(index in 2..10){
             var button_temp=Button(ContextThemeWrapper(this, R.style.scroll_button_group))
-//            var button_text_name="button_$index"
-//            var button_text=R.string.button_text_name
-//            button_temp.setText(button_text)
             var button_text_name="button_$index"
             var button_text=getStringResourceByName(button_text_name)
             button_temp.setText(button_text)
