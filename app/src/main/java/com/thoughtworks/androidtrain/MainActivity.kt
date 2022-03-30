@@ -48,7 +48,14 @@ class MainActivity : AppCompatActivity() {
         }
         linear.addView(login_button)
 
-        for(index in 3..10){
+        var pick_contact_button=Button(ContextThemeWrapper(this, R.style.scroll_button_group))
+        pick_contact_button.setText("pick_contact")
+        pick_contact_button.setOnClickListener {
+            goToLogin(pick_contact_button)
+        }
+        linear.addView(pick_contact_button)
+
+        for(index in 4..10){
             var button_temp=Button(ContextThemeWrapper(this, R.style.scroll_button_group))
             var button_text_name="button_$index"
             var button_text=getStringResourceByName(button_text_name)
