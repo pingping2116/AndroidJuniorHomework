@@ -11,4 +11,5 @@
     <string name="button_8" translatable="false">button 8</string>
     <string name="button_9" translatable="false">button 9</string>
     <string name="button_10" translatable="false">button 10</string>
+    <string name="ok" translatable="false">OK</string>
 </resources>
