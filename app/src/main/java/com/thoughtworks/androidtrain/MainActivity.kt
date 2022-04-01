@@ -100,6 +100,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
+            fun goToFragment(view: View) {
+                val intent = Intent(this, MyFragmentActivity::class.java)
+                startActivity(intent)
+            }
+
             var constraint_button = Button(ContextThemeWrapper(this, R.style.scroll_button_group))
             constraint_button.setText("constraint_layout")
             constraint_button.setOnClickListener {
@@ -121,7 +126,14 @@ class MainActivity : AppCompatActivity() {
             }
             linear.addView(pick_contact_button)
 
-            for (index in 4..10) {
+            var fragment_button = Button(ContextThemeWrapper(this, R.style.scroll_button_group))
+            fragment_button.setText("fragment")
+            fragment_button.setOnClickListener {
+                goToFragment(fragment_button)
+            }
+            linear.addView(fragment_button)
+
+            for (index in 5..10) {
                 var button_temp = Button(ContextThemeWrapper(this, R.style.scroll_button_group))
                 var button_text_name = "button_$index"
                 var button_text = getStringResourceByName(button_text_name)
