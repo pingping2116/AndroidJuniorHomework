@@ -12,4 +12,8 @@
     <string name="button_9" translatable="false">button 9</string>
     <string name="button_10" translatable="false">button 10</string>
     <string name="ok" translatable="false">OK</string>
+    <string name="android">Android</string>
+    <string name="java">Java</string>
+    <string name="android_text">Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</string>
+    <string name="java_text">Java is a High Level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</string>
 </resources>
